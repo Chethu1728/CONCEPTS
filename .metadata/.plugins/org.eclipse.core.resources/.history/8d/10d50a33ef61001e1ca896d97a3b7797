@@ -1,0 +1,61 @@
+package com.kodnest.array.level2;
+
+import java.util.Scanner;
+
+public class RotationOfArray {
+	public static void main(String[] args) 
+	{
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Enter Array Length");
+	int arr[]=new int[scan.nextInt()];
+	System.out.println("Enter "+arr.length+" Elements");
+	for(int i=0;i<=arr.length-1;i++)
+	{
+	arr[i]=scan.nextInt();
+	}
+	System.out.println("Enter the number of rotations");
+	int r=scan.nextInt();
+	RotationOfArray.rotate(arr,r);
+	scan.close();
+	}
+	static void rotate(int arr[], int n)
+	{
+		System.out.println("Array elements before rotating");
+		System.out.print("arr----->");
+		for(int i=0;i<=arr.length-1;i++)
+		{
+		System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	/*
+	    // Logic for Clockwise rotation
+		for(int i=1;i<=r;i++)
+		{
+			temp=arr[arr.length-1];
+			for(int j=arr.length-2;j>=0;j--)
+			{
+				arr[j+1]=arr[j];
+			}
+			arr[0]=temp;
+		}*/
+		
+		 // Logic for Anti Clockwise rotation
+		for(int i=1;i<=n;i++)
+		{
+			int temp=arr[0];
+			for(int j=1;j<=arr.length-1;j++)
+			{
+				arr[j-1]=arr[j];
+			}
+			arr[arr.length-1]=temp;
+		}
+		System.out.println("Array elements after rotating");
+		System.out.print("arr----->");
+		for(int i=0;i<=arr.length-1;i++)
+		{
+		System.out.print(arr[i]+" ");
+		}
+	}
+	
+  
+}

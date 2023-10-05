@@ -1,0 +1,17 @@
+package objectCreation;
+
+class Fan{
+	int wings;
+	String color;
+	int cost;
+	String brand;
+	
+	void rotate()
+	{
+		System.out.println("the "+brand+"  branded and "+color+" colored fan started to rotate which have "+wings+" wings and costed "+cost+"Rs");
+	}
+	void airBlow()
+	{
+		System.out.println("the "+color+" coloured fan started to blow the air");
+	}
+}

@@ -1,0 +1,13 @@
+package objectCreation;
+
+class Fan{
+	int wings;
+	String color;
+	int cost;
+	String brand;
+	
+	void rotate{
+		System.out.println();
+	}
+	
+}

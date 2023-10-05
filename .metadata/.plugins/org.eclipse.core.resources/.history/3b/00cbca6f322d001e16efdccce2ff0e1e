@@ -1,0 +1,9 @@
+package objectCreation;
+
+public class FanApp {
+
+	public static void main(String[] args) {
+		Fan f1=new Fan();
+	}
+
+}

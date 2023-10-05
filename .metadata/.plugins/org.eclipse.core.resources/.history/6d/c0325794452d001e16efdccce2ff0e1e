@@ -1,0 +1,25 @@
+package objectCreation;
+
+public class FanApp {
+
+	public static void main(String[] args) {
+		Fan f1=new Fan();
+		f1.no_of_wings=3;
+		f1.color="white";
+		f1.cost=5000;
+		f1.brand="crompton";
+		System.out.println(f1.no_of_wings+" "+f1.color+" "+f1.cost+" "+f1.brand);
+		f1.rotate();
+		f1.airBlow();
+		
+		Fan f2=new Fan();
+		f2.no_of_wings=4;
+		f2.color="white";
+		f2.cost=5000;
+		f2.brand="crompton";
+		System.out.println(f1.wings+" "+f1.color+" "+f1.cost+" "+f1.brand);
+		f1.rotate();
+		f1.airBlow();
+	}
+
+}
